@@ -7,6 +7,7 @@
 
 variable "prefix" {
   description = "This prefix will be included in the name of most resources."
+  default     = "barrynusbaum"
 }
 
 variable "region" {
@@ -47,4 +48,15 @@ variable "width" {
 variable "placeholder" {
   default     = "placekitten.com"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
+
+variable "AWS_ACCESS_KEY_ID" {
+  default     = "AKIARBTDQHNLBJWILFFU"
+  description = "Image width in pixels."
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  default     = "bxfzXdUdM9Nad7rJ4A4CDHmTTnkX2rlQrBbK5oWT"
+  sensitive = true
+  description = "Image width in pixels."
 }
